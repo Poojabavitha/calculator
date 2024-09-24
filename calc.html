@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Calc</title>
+        <style>
+            .container{
+                width: 360px;
+                height: 380px;
+                display: flex;
+                border: 5px solid;
+                border-color: rgb(140, 142, 145);
+                border-radius: 10px;
+                background-color: azure;
+                margin-top: 10px;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .calculator{
+                width: 300px;
+                height: 350px;
+            background-color: black;
+            padding: 15px; 
+            border-radius: 30px;   
+            display: grid;
+            grid-template-columns: repeat(70px);
+             row-gap: 10px;
+            }
+            input{
+                width: 280px;
+                height: 70px;
+                grid-column: span;
+                border: solid;
+                text-align: end;
+                font-size: 50px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            button{
+                width: 50px;
+                height: 50px;
+                margin-right:20px;
+                text-align: center;
+            }
+
+            .reset{
+                width: 100px;
+                height: 30px;
+            }
+            .equal{
+                width: 90px;
+                height: 30px;  
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        calci
+    </body>
+    <h1>calc</h1>
+    <h2>theme</h2>
+    <div class="container">
+        <div class="calculator">
+    <input type="text" id="inputbox" placeholder="0"/><br/>
+    <div>
+    <button onclick="display('7')">7</button>
+    <button onclick="display('8')">8</button>
+    <button onclick="display('9')">9</button>
+    <button onclick="del()">DEL</button> <br/>
+    </div>
+
+    <div>
+    <button onclick="display('4')">4</button>
+    <button onclick="display('5')">5</button>
+    <button onclick="display('6')">6</button>
+    <button onclick="display('+')">+</button></div>
+
+    <div>
+    <button onclick="display('1')">1</button>
+    <button onclick="display('2')">2</button>
+    <button onclick="display('3')">3</button>
+    <button onclick="display('-')">-</button>
+    </div>
+
+    <div>
+    <button onclick="display('.')">.</button>
+    <button onclick="display('0')">0</button>
+    <button onclick="display('/')">/</button>
+    <button onclick="display('*')">*</button>
+    </div>
+
+    <div >
+    <button class="reset" onclick="reset()">RESET</button>
+    <button class="equal" onclick="calculate('=')">=</button></div>
+    </div>
+    </div>
+</html>
